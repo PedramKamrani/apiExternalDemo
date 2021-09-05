@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>@Model.Dmodel.name.</p>
+    <p>@Model.Dmodel.gravity.</p>
+    @foreach (var item in Model.Dmodel.films)
+    {
+        <p>@item.</p>
+    }
+
+</div>
